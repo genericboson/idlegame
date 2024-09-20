@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp64mbuc1uvt8"]
+
+[ext_resource type="Texture2D" uid="uid://be3e8hwm386ce" path="res://res/player_car.png" id="1_qx2dl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35i1k"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_35i1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qx2dl")

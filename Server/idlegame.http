@@ -1,0 +1,6 @@
+@idlegame_HostAddress = http://localhost:5034
+
+GET {{idlegame_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
