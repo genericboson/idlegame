@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2xu6x3xk8wi5"]
+
+[ext_resource type="PackedScene" uid="uid://codipj5rvn1oy" path="res://scene/background.tscn" id="1_xmuye"]
+[ext_resource type="Script" path="res://script/Background.cs" id="2_tyn57"]
+[ext_resource type="PackedScene" uid="uid://bp64mbuc1uvt8" path="res://scene/car.tscn" id="3_rn8bi"]
+[ext_resource type="Script" path="res://script/Car.cs" id="4_3r1b5"]
+
+[node name="TestGame" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_xmuye")]
+script = ExtResource("2_tyn57")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_rn8bi")]
+position = Vector2(516, 960)
+scale = Vector2(4, 4)
+script = ExtResource("4_3r1b5")
